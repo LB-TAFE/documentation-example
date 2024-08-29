@@ -88,6 +88,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-else:
-    raise ImportError(
-        "This module is not intended to be imported. Please run the file directly.")
