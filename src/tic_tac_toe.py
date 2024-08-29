@@ -1,13 +1,31 @@
+"""A simple command-line tic-tac-toe game.
+
+The game is played within the terminal when this file is run. No functionality here is intended to be imported elsewhere.
+
+Usage:
+    python tic_tac_toe.py
+"""
 board = [[' ' for _ in range(3)] for _ in range(3)]
 
 
 def print_board():
+    """Prints the tic-tac-toe board to the terminal"""
     for row in board:
         print('|'.join(row))
         print('-' * 5)
 
 
-def is_win(player):
+def is_win(player: str) -> bool:
+    """Checks if a player has won the game through a row, column, or diagonal
+    
+    Args:
+        :player - str: The character that represents a player.
+
+    Returns:
+        - bool: True if a row, column or diagonal win condition has been met, False otherwise
+
+
+    """
     for row in board:
         if all(cell == player for cell in row):
             return True
@@ -23,11 +41,20 @@ def is_win(player):
     return False
 
 
-def tally_wins(results):
+def tally_wins(results: list[bool]) -> int:
+    """Tallies the number of wins for each player
+    
+    Args:
+        :results - list[bool]: A list of boolean values representing the win status of each game played.
+
+    Returns:
+        - int: The number of wins for the player who won the most games.
+    """
     return sum(results)
 
 
 def main():
+    """Main function that runs the tic-tac-toe game, starts the main game loop when called."""
     current_player = 'X'
     moves = 0
     results = []
@@ -61,3 +88,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+else:
+    raise ImportError(
+        "This module is not intended to be imported. Please run the file directly.")
