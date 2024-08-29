@@ -1,0 +1,8 @@
+# main
+
+Placeholder file, no documentation available
+
+```{eval-rst}
+.. automodule:: src.main
+   :members:
+```
