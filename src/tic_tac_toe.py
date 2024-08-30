@@ -62,8 +62,8 @@ def main():
     while moves < 9:
         print_board()
         try:
-            row, col = map(int, input(f"Player {
-                           current_player}, enter row and column (0-2) separated by space: ").split())
+            row, col = map(int, input(f"Player {current_player}, enter row and column (0-2) separated by space: ")
+                           .split())
             if board[row][col] == ' ':
                 board[row][col] = current_player
                 win = is_win(current_player)
