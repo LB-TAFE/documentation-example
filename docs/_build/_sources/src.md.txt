@@ -1,6 +1,0 @@
-# src
-
-Directory that contains all project source code
-
-- src.main
-- src.tic_tac_toe

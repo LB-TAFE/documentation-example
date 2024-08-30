@@ -1,8 +1,0 @@
-# tic_tac_toe
-
-Holds game logic for tic-tac-toe
-
-```{eval-rst}
-.. automodule:: src.tic_tac_toe
-   :members:
-```
