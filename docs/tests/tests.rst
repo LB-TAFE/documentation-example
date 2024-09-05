@@ -7,5 +7,6 @@ Directory that contains all project source code
    :maxdepth: 2
    :caption: Contents:
 
-   test_tic_tac_toe.rst
+   pytests/pytests.rst
+   unittests/unittests.rst
    

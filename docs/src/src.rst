@@ -7,5 +7,5 @@ Directory that contains all project source code
    :maxdepth: 2
    :caption: Contents:
 
-   tic_tac_toe.rst
-   main.rst
+   script_version/script_version.rst
+   modular_version/modular_version.rst

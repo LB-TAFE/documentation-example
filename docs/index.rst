@@ -12,5 +12,6 @@ An example of a Sphinx project for the IPoS course.
    :maxdepth: 2
    :caption: Contents:
 
+   main.rst
    src/src.rst
    tests/tests.rst
