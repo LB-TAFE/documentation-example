@@ -23,8 +23,6 @@ def is_win(player: str) -> bool:
 
     Returns:
         - bool: True if a row, column or diagonal win condition has been met, False otherwise
-
-
     """
     for row in board:
         if all(cell == player for cell in row):
