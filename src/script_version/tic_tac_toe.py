@@ -15,11 +15,12 @@ def print_board():
         print('-' * 5)
 
 
-def is_win(player: str) -> bool:
+def is_win(player: str, board=board) -> bool:
     """Checks if a player has won the game through a row, column, or diagonal
     
     Args:
-        :player - str: The character that represents a player.
+        :player - str: The player to check for a win condition.
+        :board - list[list[str]]: A 3x3 list representing the tic-tac-toe board.
 
     Returns:
         - bool: True if a row, column or diagonal win condition has been met, False otherwise

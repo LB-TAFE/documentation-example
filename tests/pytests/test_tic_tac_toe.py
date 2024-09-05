@@ -11,16 +11,16 @@ def test_is_win_no_win():
 def test_is_win_row_win():
     """Test is_win function with a row win condition"""
     board = [['X', 'X', 'X'], [' ', ' ', ' '], [' ', ' ', ' ']]
-    assert is_win('X')
+    assert is_win('X', board)
 
 
 def test_is_win_column_win():
     """Test is_win function with a column win condition"""
     board = [['X', ' ', ' '], ['X', ' ', ' '], ['X', ' ', ' ']]
-    assert is_win('X')
+    assert is_win('X', board)
 
 
 def test_is_win_diagonal_win():
     """Test is_win function with a diagonal win condition"""
     board = [['X', ' ', ' '], [' ', 'X', ' '], [' ', ' ', 'X']]
-    assert is_win('X')
+    assert is_win('X', board)
