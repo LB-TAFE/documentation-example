@@ -32,8 +32,8 @@ class Board:
 
         :return: None
         """
-        print(
-            f"\n{"--"*self.size}\n".join(["|".join(row) for row in self.nodes]))
+        message = f"\n{"--"*self.size}\n".join(["|".join(row) for row in self.nodes])
+        print(message)
         print("\n"*5)
 
     def enter_position(self, char: str, position: int):

@@ -20,8 +20,7 @@ class Game:
         :return: int
         """
         while True:
-            move = input(f"Next move for player {
-                         player} (0-{self.board.size**2-1}): ")
+            move = input(f"Next move for player {player} (0-{self.board.size**2-1}): ")
             if not self.board.check_for_valid_position(move):
                 print("Invalid move, try again.")
                 continue
