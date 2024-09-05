@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>test_game &#8212; ipos-sphinx-activity 0.1 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/scrolls.css?v=966ca10f" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/theme_extras.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="test_board" href="test_board.html" /> 
+  </head><body>
+    <div id="content">
+      <div class="header">
+        <h1 class="heading"><a href="../../index.html"
+          title="back to the documentation overview"><span>test_game</span></a></h1>
+      </div>
+      <div class="relnav" role="navigation" aria-label="Related">
+        <a href="test_board.html">&laquo; test_board</a> |
+        <a href="#">test_game</a>
+      </div>
+      <div id="contentwrapper">
+        <div id="toc" role="navigation" aria-label="Table of contents">
+          <h3>Table of Contents</h3>
+          <ul>
+<li><a class="reference internal" href="#">test_game</a><ul>
+<li><a class="reference internal" href="#tests.unittests.test_game.TestGame"><code class="docutils literal notranslate"><span class="pre">TestGame</span></code></a><ul>
+<li><a class="reference internal" href="#tests.unittests.test_game.TestGame.setUp"><code class="docutils literal notranslate"><span class="pre">TestGame.setUp()</span></code></a></li>
+<li><a class="reference internal" href="#tests.unittests.test_game.TestGame.test_check_tie_conditions_board_no_tie_returns_false"><code class="docutils literal notranslate"><span class="pre">TestGame.test_check_tie_conditions_board_no_tie_returns_false()</span></code></a></li>
+<li><a class="reference internal" href="#tests.unittests.test_game.TestGame.test_check_tie_conditions_empty_board_returns_false"><code class="docutils literal notranslate"><span class="pre">TestGame.test_check_tie_conditions_empty_board_returns_false()</span></code></a></li>
+<li><a class="reference internal" href="#tests.unittests.test_game.TestGame.test_check_tie_conditions_full_board_returns_true"><code class="docutils literal notranslate"><span class="pre">TestGame.test_check_tie_conditions_full_board_returns_true()</span></code></a></li>
+<li><a class="reference internal" href="#tests.unittests.test_game.TestGame.test_check_win_conditions_diagonal_win_returns_true"><code class="docutils literal notranslate"><span class="pre">TestGame.test_check_win_conditions_diagonal_win_returns_true()</span></code></a></li>
+<li><a class="reference internal" href="#tests.unittests.test_game.TestGame.test_check_win_conditions_horizontal_win_returns_true"><code class="docutils literal notranslate"><span class="pre">TestGame.test_check_win_conditions_horizontal_win_returns_true()</span></code></a></li>
+<li><a class="reference internal" href="#tests.unittests.test_game.TestGame.test_check_win_conditions_no_win_returns_false"><code class="docutils literal notranslate"><span class="pre">TestGame.test_check_win_conditions_no_win_returns_false()</span></code></a></li>
+<li><a class="reference internal" href="#tests.unittests.test_game.TestGame.test_check_win_conditions_vertical_win_returns_true"><code class="docutils literal notranslate"><span class="pre">TestGame.test_check_win_conditions_vertical_win_returns_true()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <div role="main">
+        
+  <section id="test-game">
+<h1>test_game<a class="headerlink" href="#test-game" title="Link to this heading">¶</a></h1>
+<p>Tests for the game module</p>
+<dl class="py class" id="module-tests.unittests.test_game">
+<dt class="sig sig-object py" id="tests.unittests.test_game.TestGame">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">tests.unittests.test_game.</span></span><span class="sig-name descname"><span class="pre">TestGame</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#tests.unittests.test_game.TestGame" title="Link to this definition">¶</a></dt>
+<dd><dl class="py method">
+<dt class="sig sig-object py" id="tests.unittests.test_game.TestGame.setUp">
+<span class="sig-name descname"><span class="pre">setUp</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.unittests.test_game.TestGame.setUp" title="Link to this definition">¶</a></dt>
+<dd><p>Hook method for setting up the test fixture before exercising it.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.unittests.test_game.TestGame.test_check_tie_conditions_board_no_tie_returns_false">
+<span class="sig-name descname"><span class="pre">test_check_tie_conditions_board_no_tie_returns_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.unittests.test_game.TestGame.test_check_tie_conditions_board_no_tie_returns_false" title="Link to this definition">¶</a></dt>
+<dd><p>Test that the check_for_tie method returns False
+when there is no tie</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.unittests.test_game.TestGame.test_check_tie_conditions_empty_board_returns_false">
+<span class="sig-name descname"><span class="pre">test_check_tie_conditions_empty_board_returns_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.unittests.test_game.TestGame.test_check_tie_conditions_empty_board_returns_false" title="Link to this definition">¶</a></dt>
+<dd><p>Test that the check_for_tie method returns False
+when the board is empty</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.unittests.test_game.TestGame.test_check_tie_conditions_full_board_returns_true">
+<span class="sig-name descname"><span class="pre">test_check_tie_conditions_full_board_returns_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.unittests.test_game.TestGame.test_check_tie_conditions_full_board_returns_true" title="Link to this definition">¶</a></dt>
+<dd><p>Test that the check_for_tie method returns True
+when the board is full</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.unittests.test_game.TestGame.test_check_win_conditions_diagonal_win_returns_true">
+<span class="sig-name descname"><span class="pre">test_check_win_conditions_diagonal_win_returns_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.unittests.test_game.TestGame.test_check_win_conditions_diagonal_win_returns_true" title="Link to this definition">¶</a></dt>
+<dd><p>Test that the check_for_win method returns True
+when there is a diagonal win</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.unittests.test_game.TestGame.test_check_win_conditions_horizontal_win_returns_true">
+<span class="sig-name descname"><span class="pre">test_check_win_conditions_horizontal_win_returns_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.unittests.test_game.TestGame.test_check_win_conditions_horizontal_win_returns_true" title="Link to this definition">¶</a></dt>
+<dd><p>Test that the check_for_win method returns True
+when there is a horizontal win</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.unittests.test_game.TestGame.test_check_win_conditions_no_win_returns_false">
+<span class="sig-name descname"><span class="pre">test_check_win_conditions_no_win_returns_false</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.unittests.test_game.TestGame.test_check_win_conditions_no_win_returns_false" title="Link to this definition">¶</a></dt>
+<dd><p>Test that the check_for_win method returns False
+when there is no win</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="tests.unittests.test_game.TestGame.test_check_win_conditions_vertical_win_returns_true">
+<span class="sig-name descname"><span class="pre">test_check_win_conditions_vertical_win_returns_true</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#tests.unittests.test_game.TestGame.test_check_win_conditions_vertical_win_returns_true" title="Link to this definition">¶</a></dt>
+<dd><p>Test that the check_for_win method returns True
+when there is a vertical win</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Leif.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="../../">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>board &#8212; ipos-sphinx-activity 0.1 documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=a746c00c" />
+    <link rel="stylesheet" type="text/css" href="../../_static/scrolls.css?v=966ca10f" />
+    <link rel="stylesheet" href="_static/print.css" type="text/css" />
+    
+    <script src="../../_static/documentation_options.js?v=2709fde1"></script>
+    <script src="../../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../../_static/theme_extras.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="game" href="game.html" />
+    <link rel="prev" title="modular_version" href="modular_version.html" /> 
+  </head><body>
+    <div id="content">
+      <div class="header">
+        <h1 class="heading"><a href="../../index.html"
+          title="back to the documentation overview"><span>board</span></a></h1>
+      </div>
+      <div class="relnav" role="navigation" aria-label="Related">
+        <a href="modular_version.html">&laquo; modular_version</a> |
+        <a href="#">board</a>
+        | <a href="game.html">game &raquo;</a>
+      </div>
+      <div id="contentwrapper">
+        <div id="toc" role="navigation" aria-label="Table of contents">
+          <h3>Table of Contents</h3>
+          <ul>
+<li><a class="reference internal" href="#">board</a><ul>
+<li><a class="reference internal" href="#src.modular_version.board.Board"><code class="docutils literal notranslate"><span class="pre">Board</span></code></a><ul>
+<li><a class="reference internal" href="#src.modular_version.board.Board.check_for_valid_position"><code class="docutils literal notranslate"><span class="pre">Board.check_for_valid_position()</span></code></a></li>
+<li><a class="reference internal" href="#src.modular_version.board.Board.display"><code class="docutils literal notranslate"><span class="pre">Board.display()</span></code></a></li>
+<li><a class="reference internal" href="#src.modular_version.board.Board.enter_position"><code class="docutils literal notranslate"><span class="pre">Board.enter_position()</span></code></a></li>
+<li><a class="reference internal" href="#src.modular_version.board.Board.get_position"><code class="docutils literal notranslate"><span class="pre">Board.get_position()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+        <div role="main">
+        
+  <section id="board">
+<h1>board<a class="headerlink" href="#board" title="Link to this heading">¶</a></h1>
+<p>This module contains the board class.</p>
+<dl class="py class" id="module-src.modular_version.board">
+<dt class="sig sig-object py" id="src.modular_version.board.Board">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">src.modular_version.board.</span></span><span class="sig-name descname"><span class="pre">Board</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">empty</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'</span> <span class="pre">'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.modular_version.board.Board" title="Link to this definition">¶</a></dt>
+<dd><p>Board class for a Tic Tac Toe game.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="src.modular_version.board.Board.check_for_valid_position">
+<span class="sig-name descname"><span class="pre">check_for_valid_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#src.modular_version.board.Board.check_for_valid_position" title="Link to this definition">¶</a></dt>
+<dd><p>Checks if a position on the board is within the board’s bounds and is not marked by a character.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>position</strong> – int</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.modular_version.board.Board.display">
+<span class="sig-name descname"><span class="pre">display</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#src.modular_version.board.Board.display" title="Link to this definition">¶</a></dt>
+<dd><p>Prints the board to the terminal.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.modular_version.board.Board.enter_position">
+<span class="sig-name descname"><span class="pre">enter_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">char</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#src.modular_version.board.Board.enter_position" title="Link to this definition">¶</a></dt>
+<dd><p>Sets a position on the board to a specified character.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>char</strong> – str</p></li>
+<li><p><strong>position</strong> – int</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="src.modular_version.board.Board.get_position">
+<span class="sig-name descname"><span class="pre">get_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">position</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#src.modular_version.board.Board.get_position" title="Link to this definition">¶</a></dt>
+<dd><p>Gets the character at a given position on the board.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>position</strong> – int</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2024, Leif.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.4.7.
+    </div>
+  </body>
+</html>
