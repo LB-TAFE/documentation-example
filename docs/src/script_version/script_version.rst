@@ -1,8 +1,10 @@
-script\_tic\_tic\_tac\_toe
-==========================
+script_version
+==============
 
 Holds the script version of the project.
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   tic_tac_toe.rst

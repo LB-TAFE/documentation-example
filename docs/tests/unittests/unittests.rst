@@ -7,5 +7,6 @@ unittests for the modular version of the project
    :maxdepth: 2
    :caption: Contents:
 
-   test_tic_tac_toe.rst
+   test_board.rst
+   test_game.rst
    
