@@ -9,7 +9,7 @@ ipos-sphinx-activity documentation
 An example of a Sphinx project for the IPoS course.
 
 .. toctree::
-   :maxdepth: 3
+   :maxdepth: 1
    :caption: Contents:
 
    main.rst
