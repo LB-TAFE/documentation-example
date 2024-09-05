@@ -2,7 +2,9 @@ from .board import Board
 
 
 class Game:
-
+    """
+    Game class that handles the main game loop and win conditions for tic-tac-toe.
+    """
     def __init__(self):
 
         self.board = Board()
@@ -14,7 +16,7 @@ class Game:
         """
         Prompts the player to enter a position on the board, loops until a valid position is entered.
 
-        :param player:
+        :param player: int
         :return: int
         """
         while True:
@@ -29,7 +31,7 @@ class Game:
         """
         Checks if any of the game's win conditions have been met for a specific player.
 
-        :param player:
+        :param player: str
         :return: bool
         """
         # To allow the board's size to be changed, algorithms have been made to check if a win condition is met
@@ -41,7 +43,7 @@ class Game:
         """
         Checks if there is a horizontal line in the board.
 
-        :param player:
+        :param player: str
         :return: bool
         """
         return any([all([char == player for char in row]) for row in self.board.nodes])
@@ -50,7 +52,7 @@ class Game:
         """
         Checks if there is a vertical line in the board.
 
-        :param player:
+        :param player: str
         :return: bool
         """
         # TODO: Refactor into a one-line return statement (optional)
@@ -63,7 +65,7 @@ class Game:
         """
         Checks if there is a diagonal line in the board.
 
-        :param player:
+        :param player: str
         :return: bool
         """
         # TODO: Simplify algorithm (optional)

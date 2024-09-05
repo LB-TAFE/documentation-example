@@ -1,4 +1,7 @@
 class Board:
+    """
+    Board class for a Tic Tac Toe game.
+    """
 
     def __init__(self, size=3, empty=" "):
         self.size = size
